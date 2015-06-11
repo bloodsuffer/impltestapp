@@ -14,9 +14,13 @@ public class Task3 {
 	
 	public static BigInteger factorial(int n){
 		BigInteger big = BigInteger.valueOf(1);
+		MyBigInt myBig = new MyBigInt();
+		myBig.setValue(1);
 		for (int i = 1; i <= n; i++) {
 			big = big.multiply(BigInteger.valueOf(i));
+			myBig.multiply(i);
 		}
+		System.out.println(sumOfDigits(myBig.toString()));
 		return big;
 	}
 	
