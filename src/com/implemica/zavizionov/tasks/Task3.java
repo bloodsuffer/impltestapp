@@ -4,6 +4,7 @@ import java.math.BigInteger;
 
 public class Task3 {
 	
+	
 
 	public static void main(String[] args) {
 		BigInteger big = factorial(100);
